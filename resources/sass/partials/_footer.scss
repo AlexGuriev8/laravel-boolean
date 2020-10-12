@@ -1,0 +1,36 @@
+.bg-blue {
+    background: #001632;
+}
+
+footer {
+    .footer-top {
+    position: relative;
+    margin-bottom: 60px;
+    & img {
+        width: 180px;
+    }
+}
+    .footer-top::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(100% - 300px);
+    height: 3px;
+    background: #fff;
+    }
+
+    .footer-links a {
+    text-decoration: underline;
+    }
+
+
+
+    .footer-socials a {
+        margin: 0 7px;
+       & img{
+            width: 30px;
+        }
+    }
+    
+}

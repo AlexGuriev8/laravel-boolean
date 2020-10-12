@@ -10899,6 +10899,28 @@ a.text-dark:focus {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chilanka", cursive;
+}
+
+.text-paragraph {
+  width: 18px;
+}
+
+.text-green {
+  color: #0cd977;
+}
+
+.ls-none {
+  list-style: none;
+}
+
 .card-group > .card {
   width: 33, 3% !important;
   padding: 20px;
@@ -10910,5 +10932,40 @@ a.text-dark:focus {
   height: 200px;
   width: 200px;
   margin: 20px;
+}
+
+.bg-blue {
+  background: #001632;
+}
+
+footer .footer-top {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+footer .footer-top img {
+  width: 180px;
+}
+
+footer .footer-top::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: calc(100% - 300px);
+  height: 3px;
+  background: #fff;
+}
+
+footer .footer-links a {
+  text-decoration: underline;
+}
+
+footer .footer-socials a {
+  margin: 0 7px;
+}
+
+footer .footer-socials a img {
+  width: 30px;
 }
 
