@@ -10921,17 +10921,63 @@ body {
   list-style: none;
 }
 
-.card-group > .card {
-  width: 33, 3% !important;
-  padding: 20px;
-  box-shadow: 8px 8px 20px rgba(138, 138, 138, 0.5);
-  margin: 10px;
+.wrapper-container-scroll {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  color: #fff;
 }
 
-.card-group > .card img {
-  height: 200px;
+.wrapper-container-scroll {
+  height: 100%;
+  overflow: hidden;
+  color: #000;
+}
+
+.container-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 5% 0;
+  overflow-x: scroll;
+  list-style: none;
+}
+
+.container-scroll .container-scroll__element {
+  width: 33.33333%;
+  min-width: 33.33333%;
+  height: 100%;
+  margin: 0 2%;
+}
+
+.boolean__card {
+  max-width: 100%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 8px 8px 20px rgba(138, 138, 138, 0.5);
+  border-radius: 20px;
+  width: 500px;
+  margin: auto 2%;
+}
+
+.boolean__card .card__top {
+  padding: 5px;
+}
+
+.boolean__card .card__top img {
   width: 200px;
-  margin: 20px;
+  height: 200px;
+}
+
+.boolean__card .card__top h5 {
+  padding: 10px;
+}
+
+.center {
+  justify-content: center;
 }
 
 .bg-blue {
