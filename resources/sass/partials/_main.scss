@@ -1,13 +1,58 @@
-.card-group > .card{
-    width: 33,3% !important;
-    padding: 20px;
-    box-shadow: 8px 8px 20px hsla(0,0%,54%,.5);
-    margin: 10px;
-    & img{
-        height: 200px;
-        width: 200px;
-        margin: 20px;
-    }
 
+.wrapper-container-scroll {
+    position: relative;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    color: #fff;
 }
 
+.wrapper-container-scroll {
+    height: 100%;
+    overflow: hidden;
+    color: #000;
+}
+
+.container-scroll {
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5% 0;
+    overflow-x: scroll;
+    list-style: none;
+
+    .container-scroll__element {
+        width: 33.33333%;
+        min-width: 33.33333%;
+        height: 100%;
+        margin: 0 2%;
+    }
+}
+
+.boolean__card {
+    max-width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 8px 8px 20px hsla(0,0%,54%,.5);
+    border-radius: 20px;
+    width: 500px;
+    margin: auto 2%;
+    .card__top {
+        padding: 5px;
+        & img{
+            width: 200px;
+            height: 200px;
+        }
+        & h5 {
+            padding: 10px;
+        }
+    }
+}
+
+.center {
+    justify-content: center;
+}
