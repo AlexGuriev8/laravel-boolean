@@ -3,5 +3,5 @@
 @section('titolo','Home')
     
 @section('content')
-    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, iusto!</div>
+   <h1 class="text-center">PAGINA HOME</h1>
 @endsection

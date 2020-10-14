@@ -3,5 +3,5 @@
 @section('titolo','Chi siamo')
 
 @section('content')
-    chi siamo
+    <h1 class="text-center">PAGINA CHI SIAMO</h1>
 @endsection
