@@ -7,11 +7,11 @@ body {
    font-family: 'Chilanka', cursive;
 }
 .text-paragraph{
-    width: 18px;
+    width: $p-width;
 }
 
 .text-green {
-    color: #0cd977;
+    color: $green;
 }
 
 .ls-none{
