@@ -3,10 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Student;
 
 class StudentController extends Controller
 {
-    protected $students;
+
+
+public function studenti(){
+    $data = Student::all();
+    return view('studenti',compact('data'));
+}
+
+public function show($id){
+        $student = Student::find($id);
+        return view('show',compact('student'));
+}
+    //METODO USANDO CONFIG
+    /* protected $students;
 
     public function __construct()
     {
@@ -24,5 +37,5 @@ class StudentController extends Controller
         }
         $student = $this->students[$id];
        return  view('show',compact('student'));
-    }
+    } */
 }
